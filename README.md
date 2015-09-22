@@ -2,20 +2,19 @@
 
 ## Table of Contents
   1.  [Introduction](#introduction)
-        1. [Clone project](#clone-project)
-        1. [Remote upstream](#remote-upstream)
-        1. [Rebase upstream](#rebase-upstream) 
+      1. [Clone project](#clone-project)
+      1. [Remote upstream](#remote-upstream)
+      1. [Rebase upstream](#rebase-upstream) 
   1.  [Gitflow](#gitflow)
-        1. [Resources](#resources)
-        1. [Main branches](#main-branches)
-        1. [Features](#features)  
+      1. [Resources](#resources)
+      1. [Main branches](#main-branches)
+      1. [Features](#features)  
   1.  [Commit messages](#commit-messages)
-        1. [Format](#format)
-        1. [Types](#types) 
-        1. [Subject](#subject)
-        1. [Body](#body)
-        1. [Footer](#footer)   
-
+      1. [Format](#format)
+      1. [Types](#types) 
+      1. [Subject](#subject)
+      1. [Body](#body)
+      1. [Footer](#footer)   
 
 ## Introduction 
 Before you begin you must make a copy of the project. Go on project and click on fork. Now you have your own repository of project.
@@ -32,7 +31,7 @@ To update your fork it's necessary to do a remote project from main project in u
 
 Now you can fetch code from main project :
 
-`git fetch upstream
+`git fetch upstream`
 
 ### Rebase upstream
 Before proposing the feature it's important to be updated, this requires rebase. First go to origin/develop :
@@ -118,7 +117,7 @@ The body can sometimes be used to clarify an important part of commit.It brings 
 The footer is used to specify the id of closed issue. Simply specify the ticket number as shown below :
 
 ```
-close #9
+fixes #9
 ```
 
 ### Example
@@ -128,7 +127,7 @@ feat: change the countdown display
 
 change count to depends on the number life points at level 10
 
-close #32
+fixes #32
 ```
 
 
