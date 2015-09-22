@@ -31,7 +31,7 @@ To update your fork it's necessary to do a remote project from main project in u
 
 Now you can fetch code from main project :
 
-`git fetch upstream`
+`git fetch upstream
 
 ### Rebase upstream
 Before proposing the feature it's important to be updated, this requires rebase. First go to origin/develop :
@@ -53,8 +53,8 @@ To facilitate teamwork, it's best to use gitflow. Gitflow is a workflow for git 
 
 ### Main branches
 
-**master**: Contain the released versions of the project
-**develop**: Contains the latest valid feature
+- **master**: Contain the released versions of the project
+- **develop**: Contains the latest valid feature
 
 ### Features
 Every features should be develop in his own branch. To create feature use this command when you are on develop:
@@ -76,9 +76,9 @@ The `header` is required, while `body` and `footer` depend on context.
 
 ```
 type: subject
-`blank line`
+[blank line]
 body
-`blank line`
+[blank line]
 footer
 ```
 
@@ -117,7 +117,7 @@ The body can sometimes be used to clarify an important part of commit.It brings 
 The footer is used to specify the id of closed issue. Simply specify the ticket number as shown below :
 
 ```
-fixes #9
+close #9
 ```
 
 ### Example
@@ -127,7 +127,7 @@ feat: change the countdown display
 
 change count to depends on the number life points at level 10
 
-fixes #32
+close #32
 ```
 
 
