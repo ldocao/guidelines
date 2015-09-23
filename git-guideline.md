@@ -24,7 +24,7 @@ Now you can clone the project to your computer :
 
 ```sh
 git clone git@github.com:myname/myrepo.git
-``
+```
 
 ### Remote upstream
 To update your fork it's necessary to have a remote from main project in upstream directory :
@@ -37,7 +37,7 @@ Now you can fetch code from main project :
 
 ```sh
 git fetch upstream
-`
+```
 
 ### Rebase upstream
 Before proposing the feature it's important to be updated, this requires rebase
@@ -81,7 +81,7 @@ When the feature is finished, specifiy the id of closed issue on footer(#footer)
 
 ```sh
 git flow feature finish feature-name
-```sh
+```
 
 Now the feature is merged on your develop, push it and make pull request !
 
