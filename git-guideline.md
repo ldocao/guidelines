@@ -93,7 +93,7 @@ A commit message can contain up to three parts `header`, `body` and `footer`.
 The `header` is required, while `body` and `footer` depend on context.
 
 ```sh
-type: subject
+type : subject
 [blank line]
 body
 [blank line]
