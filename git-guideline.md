@@ -94,6 +94,7 @@ Types are allow for a quick overview of the commit. Respect these conventions le
 - **refactor**: Code change but nothing else
 - **content**:  Add or modify content
 - **typo**:     Correct typography
+- **noise**:    When the commit is just noise like non-breaking space 
 
 ### Subject
 The subject is a short description which specifies the commit.
