@@ -17,32 +17,46 @@
       1. [Footer](#footer)   
 
 ## Introduction 
-Before you begin you must make a copy of the project. Go on project and click on fork. Now you have your own repository of project.
+Before you begin you must make a copy of the project. Go on project and click on fork. You now have a copy of the project in your github repositories.
 
 ### Clone project
 Now you can clone the project to your computer :
 
-`git@github.com:myname/myrepo.git`
+```sh
+git clone git@github.com:myname/myrepo.git
+``
 
 ### Remote upstream
-To update your fork it's necessary to do a remote project from main project in upstream directory :
+To update your fork it's necessary to have a remote from main project in upstream directory :
 
-`git remote add upstream https://github.com/mythiqueteam/mythique.git`
+```sh
+git remote add upstream https://github.com/mythiqueteam/mythique.git
+```
 
 Now you can fetch code from main project :
 
-`git fetch upstream
+```sh
+git fetch upstream
+`
 
 ### Rebase upstream
-Before proposing the feature it's important to be updated, this requires rebase. First go to origin/develop :
+Before proposing the feature it's important to be updated, this requires rebase
+. 
+First, update your upstream branch :
 
-`git checkout develop`
+```sh
+git checkout upstream/master
+git pull
+```
 
-And rebase the code :
+Then go to origin/develop and rebase from upstream :
 
-`git rebase upstream/master`
+```sh
+git checkout master
+git rebase upstream/master
+```
 
-Once corrected, you can push on your project and do a pull request !
+Once corrected, you can push on your project and make a pull request !
 
 ## Gitflow
 To facilitate teamwork, it's best to use gitflow. Gitflow is a workflow for git users with a lot of conventions. 
@@ -59,11 +73,15 @@ To facilitate teamwork, it's best to use gitflow. Gitflow is a workflow for git 
 ### Features
 Every features should be develop in his own branch. To create feature use this command when you are on develop:
 
-`git flow feature start feature-name`
+```sh
+git flow feature start feature-name
+```
 
 When the feature is finished, specifiy the id of closed issue on footer(#footer) and run command :
 
-`git flow feature finish feature-name`
+```sh
+git flow feature finish feature-name
+```sh
 
 Now the feature is merged on your develop, push it and make pull request !
 
@@ -74,7 +92,7 @@ Naming conventions in commit messages makes reading pull request easier and give
 A commit message can contain up to three parts `header`, `body` and `footer`.
 The `header` is required, while `body` and `footer` depend on context.
 
-```
+```sh
 type: subject
 [blank line]
 body
@@ -117,13 +135,13 @@ The body can sometimes be used to clarify an important part of commit.It brings 
 ### Footer
 The footer is used to specify the id of closed issue. Simply specify the ticket number as shown below :
 
-```
+```sh
 close #9
 ```
 
 ### Example
 
-```
+```sh
 feat: change the countdown display
 
 change count to depends on the number life points at level 10
