@@ -103,16 +103,20 @@ footer
 ### Types
 Types are allow for a quick overview of the commit. Respect these conventions lets talk about the same thing !
 
-- **feat**:     Add or modify feature
 - **fix**:      For bug fix
-- **doc**:      Improve documentation
-- **design**:   Improve design
 - **perf**:     Improve code performances
 - **test**:     Improve application tests
+- **design**:   Improve design
+- **doc**:      Improve documentation
 - **refactor**: Code change but nothing else
+- **feat**:     Add or modify feature
 - **content**:  Add or modify content
 - **typo**:     Correct typography
 - **noise**:    When the commit is just noise like non-breaking space 
+
+Usually you need to reduce your commit to one type, but in practice it will happen that several types are found in one commit. In such cases the previous hierarchy is important.
+
+For example, if my commit fix a bug and add some documentation, the first in the list (fix) is the type to use. 
 
 ### Subject
 The subject is a short description which specifies the commit.
