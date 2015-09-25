@@ -103,16 +103,16 @@ footer
 ### Types
 Types are allow for a quick overview of the commit. Respect these conventions lets talk about the same thing !
 
-- **fix**:      For bug fix
-- **perf**:     Improve code performances
-- **test**:     Improve application tests
-- **design**:   Improve design
-- **doc**:      Improve documentation
-- **refactor**: Code change but nothing else
-- **feat**:     Add or modify feature
-- **content**:  Add or modify content
-- **typo**:     Correct typography
-- **noise**:    When the commit is just noise like non-breaking space 
+- **fix** :      For bug fix
+- **perf** :     Improve code performances
+- **test** :     Improve application tests
+- **design** :   Improve design
+- **doc** :      Improve documentation
+- **refactor** : Code change but nothing else
+- **feat** :     Add or modify feature
+- **content** :  Add or modify content
+- **typo** :     Correct typography
+- **noise** :    When the commit is just noise like non-breaking space 
 
 Usually you need to reduce your commit to one type, but in practice it will happen that several types are found in one commit. In such cases the previous hierarchy is important.
 
@@ -146,7 +146,7 @@ close #9
 ### Example
 
 ```sh
-feat: change the countdown display
+feat : change the countdown display
 
 change count to depends on the number life points at level 10
 
