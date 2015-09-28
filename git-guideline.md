@@ -106,10 +106,10 @@ Types are allow for a quick overview of the commit. Respect these conventions le
 - **fix** :      For bug fix
 - **perf** :     Improve code performances
 - **test** :     Improve application tests
-- **design** :   Improve design
-- **doc** :      Improve documentation
-- **refactor** : Code change but nothing else
 - **feat** :     Add or modify feature
+- **design** :   Improve design
+- **refactor** : Code change but nothing else
+- **doc** :      Improve documentation
 - **content** :  Add or modify content
 - **typo** :     Correct typography
 - **noise** :    When the commit is just noise like non-breaking space 
