@@ -93,7 +93,7 @@ A commit message can contain up to three parts `header`, `body` and `footer`.
 The `header` is required, while `body` and `footer` depend on context.
 
 ```sh
-type: subject
+type : subject
 [blank line]
 body
 [blank line]
@@ -113,6 +113,11 @@ Types are allow for a quick overview of the commit. Respect these conventions le
 - **doc**:      Improve documentation
 - **typo**:     Correct typography
 - **noise**:    When the commit is just noise like non-breaking space 
+
+Usually you need to reduce your commit to one type, but in practice it will happen that several types are found in one commit. In such cases the previous hierarchy is important.
+
+For example, if my commit fix a bug and add some documentation, the first in the list (fix) is the type to use. 
+
 
 ### Subject
 The subject is a short description which specifies the commit.
@@ -142,7 +147,7 @@ close #9
 ### Example
 
 ```sh
-feat: change the countdown display
+feat : change the countdown display
 
 change count to depends on the number life points at level 10
 
