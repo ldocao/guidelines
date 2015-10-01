@@ -103,14 +103,14 @@ footer
 ### Types
 Types are allow for a quick overview of the commit. Respect these conventions lets talk about the same thing !
 
+- **refactor**: Code change but nothing else
 - **feat**:     Add or modify feature
 - **fix**:      For bug fix
-- **doc**:      Improve documentation
-- **design**:   Improve design
 - **perf**:     Improve code performances
 - **test**:     Improve application tests
-- **refactor**: Code change but nothing else
+- **design**:   Improve design
 - **content**:  Add or modify content
+- **doc**:      Improve documentation
 - **typo**:     Correct typography
 - **noise**:    When the commit is just noise like non-breaking space 
 
