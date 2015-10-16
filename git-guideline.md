@@ -154,4 +154,13 @@ change count to depends on the number life points at level 10
 close #32
 ```
 
+### Annotations
 
+Annotations should usually be written on the line immediately above the relevant code. The annotation keyword is followed by a colon and a space, then a note describing the problem:
+
+  - use TODO to note missing features or functionality that should be added at a later date
+  - use FIXME to note broken code that needs to be fixed
+  - use OPTIMIZE to note slow or inefficient code that may cause performance problems
+  - use HACK to note code smells where questionable coding practices were used and should be refactored.
+
+Note: copy from synbioz/guidelines
